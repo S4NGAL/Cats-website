@@ -1,0 +1,29 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+
+
+.header {
+    background-color: rgb(165, 192, 196);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+ul {
+    display: flex;
+    gap: 15px;
+    list-style-type: none;
+    padding: 10px;
+}
+
+a {
+
+    color: darkred;
+    text-decoration: none;
+}

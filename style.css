@@ -100,3 +100,22 @@ img {
     height: auto;
     width: 120px;
 }
+
+
+
+.content3 {
+    background-color: #1f2937;
+    display: flex;
+    height: 600px;
+    flex-shrink: 0;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
+}
+
+.quote {
+    color:antiquewhite;
+    font-size: 48px;
+    width: 650px;
+    height: auto;
+}

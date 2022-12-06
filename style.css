@@ -182,3 +182,14 @@ img {
 .left4 h3 {
     color:  darkmagenta;
 }
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    flex-shrink: 0;
+    background-color: #1f2937;
+    height: 80px;
+    color:antiquewhite
+}

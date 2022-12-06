@@ -82,7 +82,7 @@ button {
 
 
 .content2 {
-    background-color: lightblue;
+    background-color: whitesmoke;
     display: flex;
     flex-direction: column;
     height: 600px;
@@ -116,7 +116,7 @@ img {
 
 
 .content3 {
-    background-color: #1f2937;
+    background-color: #e5e7eb;
     display: flex;
     flex-direction: column;
     height: 600px;
@@ -127,15 +127,16 @@ img {
 }
 
 .quote {
-    color:antiquewhite;
-    font-size: 48px;
+    color: #1f2937;
+    font-size: 36px;
+    font-style: italic;
     width: 650px;
     height: auto;
 }
 
 
 .poet {
-    color: rgba(250, 235, 215, 0.76);
+    color: #1f2937;
     font-size: 32px;
     align-self: center;
 }
@@ -143,7 +144,7 @@ img {
 
 
 .content4 {
-    background-color: lightblue;
+    background-color: whitesmoke;
     display: flex;
     height: 300px;
     flex-shrink: 0;

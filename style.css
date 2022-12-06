@@ -153,6 +153,7 @@ img {
 
 .signup-container {
     display: flex;
+    flex-shrink: 0;
     width: 900px;
     height: 120px;
     background-color: rgb(0, 174, 255);

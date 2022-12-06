@@ -128,3 +128,44 @@ img {
     align-self: center;
 }
 
+
+
+.content4 {
+    background-color: lightblue;
+    display: flex;
+    height: 300px;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-container {
+    display: flex;
+    width: 900px;
+    height: 120px;
+    background-color: rgb(0, 174, 255);
+    border-radius: 60px;
+    border: 2px solid aquamarine;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-button {
+    font-size: 16px;
+    background-color: #3882f6;
+    border-radius: 20px;
+    width: 80px;
+    height: 40px;
+    border: 4px solid darkblue;
+}
+
+
+.left4 p {
+    color: whitesmoke;  
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.left4 h3 {
+    color:  darkmagenta;
+}

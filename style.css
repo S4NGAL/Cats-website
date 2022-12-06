@@ -58,6 +58,7 @@ a {
     width: 550px;
     height: 600px;
     justify-content: center;
+    flex-shrink: 0;
 }
 
 h2 {

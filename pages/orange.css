@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(116, 115, 115);
+    background-color: rgb(233, 159, 90);
 }
 
 .title {
@@ -8,7 +8,7 @@ body {
     align-items: center;
     justify-content: center;
     display: flex;
-    background-color: rgb(55, 56, 56);
+    background-color: rgb(114, 102, 87);
 }
 
 .image-container {
@@ -19,8 +19,8 @@ body {
 }
 
 .image {
-    background-color: rgb(182, 179, 179);
-    border: 6px solid rgb(90, 87, 87);
+    background-color: rgb(228, 190, 154);
+    border: 6px solid rgb(179, 27, 27);
     height: auto;
     width: 300px;
     margin: 50px;
@@ -34,7 +34,8 @@ body {
 
 p {
     flex-grow: 0;
-    color:aliceblue;
+    color:rgb(74, 75, 77);
     font-size: 36px;
     margin: 0;
+    font-weight: bold;
 }

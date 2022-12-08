@@ -1,5 +1,9 @@
 body {
     background-color: rgb(233, 159, 90);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
 }
 
 .title {
@@ -40,4 +44,38 @@ p {
     font-size: 36px;
     margin: 0;
     font-weight: bold;
+}
+
+
+.logo-image {
+    width: 100px;
+    height: auto;
+    margin-left: 100px;
+}
+
+ul {
+    display: flex;
+    gap: 15px;
+    list-style-type: none;
+    padding: 0
+}
+
+
+.header {
+    background-color: rgba(0, 0, 0, 0.35);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    flex-shrink: 0;
+}
+
+li {
+    margin: 10px;
+}
+
+a {
+    font-size: 26px;
+    color: darkred;
+    text-decoration: none;
 }

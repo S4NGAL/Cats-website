@@ -5,6 +5,7 @@ body {
 .title {
     height: 120px;
     color:antiquewhite;
+    font-size: 48px;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -33,6 +34,7 @@ body {
  }
 
 p {
+    font-weight: bold;
     flex-grow: 0;
     color:rgb(74, 75, 77);
     font-size: 36px;

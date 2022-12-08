@@ -1,0 +1,32 @@
+.title {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: aquamarine;
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;;
+    flex-wrap: wrap;
+}
+
+.image {
+    background-color: rgb(182, 179, 179);
+    border: 6px solid rgb(90, 87, 87);
+    height: auto;
+    width: 300px;
+    margin: 50px;
+}
+
+.image-box {
+    flex-grow: 0;
+}
+
+p {
+    flex-grow: 0;
+    color:rgb(0, 0, 0);
+    font-size: 36px;
+    padding-left: 20px;
+}

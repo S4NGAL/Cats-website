@@ -2,6 +2,7 @@ const moves = ["rock", "paper", "scissors"]
 
 Math.floor(Math.random() * 4);
 
+let playerChoice; let ComputerChoice;
 
 function getComputerChoice() {
     let a = Math.floor(Math.random() * 3);
@@ -46,4 +47,19 @@ function playRound(ps, cs){
     }
 }
 
-console.log(playRound(getComputerChoice(), getComputerChoice()));
+
+
+function rock(){
+    let playerChoice = "rock";
+    console.log(playRound(playerChoice, getComputerChoice()));
+}
+
+function paper(){
+    let playerChoice = "paper";
+    console.log(playRound(playerChoice, getComputerChoice()));
+}
+
+function scissors(){
+    let playerChoice = "scissors";
+    console.log(playRound(playerChoice, getComputerChoice()));
+}

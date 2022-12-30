@@ -93,10 +93,12 @@ function checkStatus() {
 
 function playerWins(){
     console.log("Player Wins!!!");
+    buttonRemover();
 }
 
 function computerWins(){
     console.log("Computer Wins!!!");
+    buttonRemover();
 }
 
 function rock(){
@@ -115,14 +117,23 @@ function scissors(){
 }
 
 
-document.getElementById("btnRck").addEventListener("click", function(){
+var btnRck = document.getElementById("btnRck");
+btnRck.addEventListener("click", function(){
     rock();
 });
 
-document.getElementById("btnSci").addEventListener("click", function(){
+var btnSci = document.getElementById("btnSci"); 
+btnSci.addEventListener("click", function(){
     scissors();
 });
 
-document.getElementById("btnPpr").addEventListener("click", function(){
+var btnPpr = document.getElementById("btnPpr");
+btnPpr.addEventListener("click", function(){
     paper();
 });
+
+function buttonRemover() {
+    btnPpr.remove();
+    btnRck.remove();
+    btnSci.remove();
+}

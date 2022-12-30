@@ -1,6 +1,7 @@
 const moves = ["rock", "paper", "scissors"]
 let winsOfPlayer = 0;
 let winsOfComputer = 0;
+let winnerExsists = 0;
 
 Math.floor(Math.random() * 4);
 
@@ -17,48 +18,57 @@ function playRound(ps, cs){
         case "rock":
             switch (cs) {
                 case "rock":
+                    console.log("Rock equals Rock no winner");
                     checkStatus();
-                    return "Rock equals Rock no winner";
+                    break;
                 case "paper":
                     winsOfComputer++;
+                    console.log("Rock get lost against Paper Player lose");
                     checkStatus();
-                    return "Rock get lost against Paper Player lose";
+                    break;
                 case "scissors":
                     winsOfPlayer++;
+                    console.log("Rock breaks Scissors Player Wins");
                     checkStatus();
-                    return "Rock breaks Scissors Player Wins";
+                    break;
             }
             break;
         
         case "paper":
             switch (cs) {
                 case "paper":
+                    console.log("Paper equals paper no winner");
                     checkStatus();
-                    return "Paper equals paper no winner";
+                    break;
                 case "rock":
                     winsOfPlayer++;
+                    console.log("Paper beats Rock Player wins");
                     checkStatus();
-                    return "Paper beats Rock Player wins";
+                    break;
                 case "scissors":
                     winsOfComputer++;
+                    console.log("scissors cuts paper Player LOSE");
                     checkStatus();
-                    return "scissors cuts paper Player LOSE";
+                    break;
             }
             break;
         
         case "scissors":
             switch(cs){
                 case "scissors":
+                    console.log("Scissors equal to Scissors no winner");
                     checkStatus();
-                    return "Scissors equal to Scissors no winner";
+                    break;
                 case "rock":
                     winsOfComputer++;
+                    console.log("Rock breaks scissors Player LOSE");
                     checkStatus();
-                    return "Rock breaks scissors Player LOSE";
+                    break;
                 case "paper":
                     winsOfPlayer++;
+                    console.log("Scissors cuts paper Player Wins");
                     checkStatus();
-                    return "Scissors cuts paper Player Wins";
+                    break;
             }
     
         }
@@ -76,9 +86,9 @@ function checkStatus() {
             computerWins();
         }
     }
-
     console.log("Player: " + winsOfPlayer);
     console.log("Computer: " + winsOfComputer);
+    console.log("###############################");
 }
 
 function playerWins(){
@@ -103,6 +113,7 @@ function scissors(){
     let playerChoice = "scissors";
     console.log(playRound(playerChoice, getComputerChoice()));
 }
+
 
 document.getElementById("btnRck").addEventListener("click", function(){
     rock();

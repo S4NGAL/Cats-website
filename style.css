@@ -85,7 +85,7 @@ button {
     margin: 20px;
 }
 
-.rps_button {
+#rps_button {
     margin: 0;
     border: 0;
 }

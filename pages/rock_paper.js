@@ -137,9 +137,9 @@ function buttonRemover() {
 }
 
 function replay(){
-    let winsOfPlayer = 0;
-    let winsOfComputer = 0;
-    let winnerExsists = 0;
+    winsOfPlayer = 0;
+    winsOfComputer = 0;
+    winnerExsists = 0;
     buttonContainer.appendChild(btnRck);
     buttonContainer.appendChild(btnPpr);
     buttonContainer.appendChild(btnSci);

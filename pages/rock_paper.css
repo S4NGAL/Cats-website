@@ -10,7 +10,7 @@ h1 {
     color:rgb(202, 157, 58);
 }
 
-.button-container {
+#button-container {
     width: 500px;
     display: flex;
     flex-direction: row;

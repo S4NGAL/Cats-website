@@ -9,7 +9,6 @@ let playerChoice; let ComputerChoice;
 
 
 
-
 ///////////////////////////// FONKSİYONLAR  BAŞLANGIÇ //////////////////////////////////////////////////
 
 // A function that makes random choices for computer
@@ -105,12 +104,15 @@ function playerWins(){
     console.log("Player Wins!!!");
     statusText.textContent = "PLAYER WİNS";
     buttonRemover();
+    temp.appendChild(replayButton);
+
 }
 
 function computerWins(){
     console.log("Computer Wins!!!");
     statusText.textContent = "COMPUTER WİNS";
     buttonRemover();
+    temp.appendChild(replayButton);
 }
 
 function rock(){
@@ -134,6 +136,17 @@ function buttonRemover() {
     btnSci.remove();
 }
 
+function replay(){
+    let winsOfPlayer = 0;
+    let winsOfComputer = 0;
+    let winnerExsists = 0;
+    buttonContainer.appendChild(btnRck);
+    buttonContainer.appendChild(btnPpr);
+    buttonContainer.appendChild(btnSci);
+    replayButton.remove();
+    statusText.textContent = "";
+}
+
 
 
 ///////////////////////// FONKSİYONLAR BİTİŞ /////////////////////////////////////////////////////
@@ -143,26 +156,58 @@ function buttonRemover() {
 
 ///////////////////////////////// DOM TREE MANİPÜLASYONLARI  BAŞLANGIÇ ////////////////////////////////
 
-var btnRck = document.getElementById("btnRck");
+var btnRck = document.createElement("button");
+btnRck.setAttribute("content", "test content");
+btnRck.setAttribute("class", "gameButtons");
+btnRck.textContent = "ROCK";
 btnRck.addEventListener("click", function(){
     rock();
 });
 
-var btnSci = document.getElementById("btnSci"); 
-btnSci.addEventListener("click", function(){
-    scissors();
-});
-
-var btnPpr = document.getElementById("btnPpr");
+const btnPpr = document.createElement("button");
+btnPpr.setAttribute("content", "text content");
+btnPpr.setAttribute("class", "gameButtons");
+btnPpr.textContent = "PAPER";
 btnPpr.addEventListener("click", function(){
     paper();
 });
+
+const btnSci = document.createElement("button");
+btnSci.setAttribute("content", "text content");
+btnSci.setAttribute("class", "gameButtons");
+btnSci.textContent = "SCİSSORS";
+btnSci.addEventListener("click", function(){
+    scissors();
+})
+
+const buttonContainer = document.getElementById("button-container");
 
 
 const temp = document.querySelector("#temp");
 const statusText = document.createElement("div");
 statusText.setAttribute("style", "color:blue;");
 temp.appendChild(statusText);
-temp.setAttribute("style", "border: 4px solid red; margin: 10px;");
 
+const startScreen = document.getElementById("start-screen");
+const startButton = document.createElement("button");
+startButton.setAttribute("content", "text content");
+startButton.textContent = "START GAME";
+startScreen.appendChild(startButton);
+
+startButton.addEventListener("click", function(){
+    buttonContainer.appendChild(btnRck);
+    buttonContainer.appendChild(btnPpr);
+    buttonContainer.appendChild(btnSci);
+    startButton.remove();
+})
+
+const replayButton = document.createElement("button");
+replayButton.setAttribute("content", "text content");
+replayButton.textContent = "REPLAY";
+
+replayButton.addEventListener("click", function(){
+    replay();
+});
 ///////////////////////////////// DOM TREE MANİPÜLASYONLARI  BİTİŞ ////////////////////////////////
+
+

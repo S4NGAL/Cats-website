@@ -90,6 +90,10 @@ button {
     border: 0;
 }
 
+#sketch_button {
+    margin: 0;
+    border: 0;
+}
 
 .content2 {
     background-color: whitesmoke;
